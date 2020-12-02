@@ -32,8 +32,7 @@ void *Cannibal(void* param){
 
 		pthread_mutex_unlock(&mutex_food);
 
-		// Теперь можно сделать дополнительные действия чисто параллельно
-		printf("Time %d. Cannibal %d ate a meat. There are %d meat in the pot\n",
+		printf("Time %d. Cannibal %d took a meat. There are %d meat in the pot\n",
 				(int)clock(),  num, cur_food);
 	}
 
